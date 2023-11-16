@@ -6,12 +6,4 @@ FROM
     Weather AS w2
 WHERE
     w1.temperature > w2.temperature
-    AND EXTRACT(
-        'Day'
-        FROM
-            w1.recordDate
-    ) - EXTRACT(
-        'Day'
-        FROM
-            w2.recordDate
-    ) = 1;
+    AND w1.recorddate - w2.recorddate = 1;
