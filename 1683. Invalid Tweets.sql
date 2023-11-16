@@ -1,7 +1,7 @@
-# Write your MySQL query statement below
+-- Write your PostgreSQL query statement below
 SELECT
     tweet_id
 FROM
-    `Tweets`
+    Tweets
 WHERE
     CHAR_LENGTH(content) > 15;
